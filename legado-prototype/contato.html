@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contato — Reconhecimento Local Web</title>
+<meta name="description" content="Fale com a Reconhecimento Local Web e peça seu diagnóstico gratuito.">
+<link rel="icon" href="images/logo.png">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="theme-navy">
+
+<header class="navbar">
+  <div class="container">
+    <a href="home.html" class="brand"><img src="images/logo.png" alt="Reconhecimento Local Web"><span>Reconhecimento Local Web</span></a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="home.html" data-i18n="nav.home">Início</a></li>
+        <li><a href="sobre.html" data-i18n="nav.sobre">Sobre</a></li>
+        <li><a href="projetos.html" data-i18n="nav.projetos">Projetos</a></li>
+        <li><a href="servicos.html" data-i18n="nav.servicos">Serviços</a></li>
+        <li><a href="contato.html" data-i18n="nav.contato">Contato</a></li>
+      </ul>
+    </nav>
+    <div class="nav-tools">
+      <div class="lang-switch">
+        <button data-lang="pt">PT</button>
+        <button data-lang="en">EN</button>
+        <button data-lang="es">ES</button>
+      </div>
+      <button class="nav-toggle" aria-label="Menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<section class="hero hero--compact">
+  <div class="container">
+    <div class="hero-copy">
+      <h1 data-i18n="contato.hero.title">Vamos colocar seu negócio no mapa</h1>
+      <p class="lead" data-i18n="contato.hero.lead">Conte um pouco sobre seu negócio e retornaremos com um diagnóstico gratuito.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section--flush-top">
+  <div class="container row g-5">
+    <div class="col-lg-7">
+      <div class="form-box">
+        <form id="contact-form">
+          <div class="row g-3">
+            <div class="col-md-6 field">
+              <label for="contact-name" data-i18n="contato.form.name">Nome completo</label>
+              <input id="contact-name" name="name" type="text" required data-i18n-placeholder="contato.form.name">
+            </div>
+            <div class="col-md-6 field">
+              <label for="contact-email" data-i18n="contato.form.email">E-mail</label>
+              <input id="contact-email" name="email" type="email" required data-i18n-placeholder="contato.form.email">
+            </div>
+            <div class="col-md-6 field">
+              <label for="contact-phone" data-i18n="contato.form.phone">Telefone / WhatsApp</label>
+              <input id="contact-phone" name="phone" type="tel" data-i18n-placeholder="contato.form.phone">
+            </div>
+            <div class="col-md-6 field">
+              <label for="contact-business" data-i18n="contato.form.business">Nome do negócio</label>
+              <input id="contact-business" name="business" type="text" data-i18n-placeholder="contato.form.business">
+            </div>
+            <div class="col-12 field">
+              <label for="contact-service" data-i18n="contato.form.service">Serviço de interesse</label>
+              <select id="contact-service" name="service">
+                <option value="" data-i18n="contato.form.select">Selecione um serviço</option>
+                <option data-i18n="servicos.s1.title">Diagnóstico Local</option>
+                <option data-i18n="servicos.s2.title">SEO &amp; Perfis Locais</option>
+                <option data-i18n="servicos.s3.title">Gestão de Reputação</option>
+                <option data-i18n="servicos.s4.title">Criação de Site</option>
+              </select>
+            </div>
+            <div class="col-12 field">
+              <label for="contact-message" data-i18n="contato.form.message">Mensagem</label>
+              <textarea id="contact-message" name="message" data-i18n-placeholder="contato.form.message"></textarea>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-solid" data-i18n="contato.form.send">Enviar mensagem</button>
+          <p class="form-note" data-i18n="contato.form.note">Respondemos em até 1 dia útil.</p>
+          <p class="form-success" id="form-success" role="status" aria-live="polite" data-i18n="contato.form.success"></p>
+        </form>
+      </div>
+    </div>
+    <div class="col-lg-5 contato-aside">
+      <h3 data-i18n="contato.info.title">Outros canais</h3>
+      <div class="contact-info">
+        <div class="item"><span class="icon contact-icon">✉️</span><div><strong>E-mail</strong><br><a href="mailto:contato@reconhecimentolocalweb.com">contato@reconhecimentolocalweb.com</a></div></div>
+        <div class="item"><span class="icon contact-icon">📱</span><div><strong>WhatsApp</strong><br><a href="https://wa.me/5553999990000" target="_blank" rel="noopener noreferrer">+55 (53) 99999-0000</a></div></div>
+        <div class="item"><span class="icon contact-icon">📍</span><div><strong data-i18n="contato.map.title">Área de atendimento</strong><br><span data-i18n="contato.info.address">Atendimento remoto para todos os países</span></div></div>
+        <div class="item"><span class="icon contact-icon">🕒</span><div><strong data-i18n="contato.info.hours">Segunda a sexta, 9h às 18h</strong></div></div>
+      </div>
+      <div class="socials">
+        <h4 data-i18n="contato.social.title">Conecte-se com a nossa equipe</h4>
+        <div class="socials-grid">
+          <a class="social social-whatsapp" href="https://wa.me/5553999990000" target="_blank" rel="noopener noreferrer" data-i18n="contato.social.whatsapp">WhatsApp</a>
+          <a class="social social-linkedin" href="https://www.linkedin.com/company/reconhecimento-local-web/" target="_blank" rel="noopener noreferrer" data-i18n="contato.social.linkedin">LinkedIn</a>
+          <a class="social social-x" href="https://x.com/reconhecimentolocalweb" target="_blank" rel="noopener noreferrer" data-i18n="contato.social.x">X</a>
+          <a class="social social-instagram" href="https://www.instagram.com/reconhecimentolocalweb/" target="_blank" rel="noopener noreferrer" data-i18n="contato.social.instagram">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="global-section" aria-labelledby="global-title">
+  <div class="container global-grid">
+    <div>
+      <p class="eyebrow" data-i18n="contato.global.eyebrow">Presença sem fronteiras</p>
+      <h2 id="global-title" data-i18n="contato.global.title">Seu próximo cliente pode estar em qualquer lugar</h2>
+      <p class="global-text" data-i18n="contato.global.text">Criamos estratégias digitais preparadas para diferentes mercados, idiomas e fusos horários, conectando negócios locais a pessoas em todo o mundo.</p>
+      <div class="global-tags">
+        <span data-i18n="contato.global.tag1">Atendimento global</span>
+        <span data-i18n="contato.global.tag2">Estratégia multilíngue</span>
+        <span data-i18n="contato.global.tag3">Canais digitais</span>
+      </div>
+    </div>
+    <div class="world-map" role="img" aria-label="Mapa mundial da nossa área de atendimento" data-i18n-aria-label="contato.global.map">
+      <svg viewBox="0 0 760 360" aria-hidden="true" focusable="false">
+        <path class="continent" d="M74 92 112 66 160 72 181 101 164 124 134 120 119 149 82 137 60 112Z" />
+        <path class="continent" d="M190 157 226 174 246 219 231 260 210 300 187 275 191 236 171 202Z" />
+        <path class="continent" d="M315 91 348 74 383 82 397 105 371 119 344 112 326 133 300 119Z" />
+        <path class="continent" d="M352 139 405 132 445 154 435 193 402 211 373 191 344 180Z" />
+        <path class="continent" d="M455 89 512 72 572 82 626 111 679 132 700 163 661 177 617 158 574 168 532 148 489 155 460 130Z" />
+        <path class="continent" d="M514 194 555 188 593 207 581 239 550 249 523 232 494 220Z" />
+        <path class="route" d="M142 106C240 36 369 45 506 116S610 218 570 220" />
+        <circle class="map-point" cx="142" cy="106" r="7" /><circle class="map-point" cx="371" cy="119" r="7" /><circle class="map-point" cx="570" cy="220" r="7" />
+      </svg>
+      <span data-i18n="contato.global.map">Mapa mundial da nossa área de atendimento</span>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div>
+      <div class="brand"><img src="images/logo.png" alt=""><span>Reconhecimento<br>Local Web</span></div>
+      <p data-i18n="footer.tagline">Seu negócio valorizado em todos os lugares.</p>
+    </div>
+    <div>
+      <h4 data-i18n="footer.nav">Navegação</h4>
+      <ul>
+        <li><a href="home.html" data-i18n="nav.home">Início</a></li>
+        <li><a href="sobre.html" data-i18n="nav.sobre">Sobre</a></li>
+        <li><a href="projetos.html" data-i18n="nav.projetos">Projetos</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 data-i18n="footer.services">Serviços</h4>
+      <ul>
+        <li><a href="servicos.html" data-i18n="home.s1.title">SEO Local</a></li>
+        <li><a href="servicos.html" data-i18n="home.s2.title">Gestão de Avaliações</a></li>
+        <li><a href="servicos.html" data-i18n="home.s3.title">Presença Web</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 data-i18n="footer.contact">Contato</h4>
+      <ul>
+        <li><a href="mailto:contato@reconhecimentolocalweb.com">contato@reconhecimentolocalweb.com</a></li>
+        <li><a href="contato.html" data-i18n="nav.contato">Contato</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Reconhecimento Local Web. <span data-i18n="footer.rights">Todos os direitos reservados.</span></span>
+    <span>contato.html</span>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
